@@ -1,0 +1,53 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced eBook Maker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MAKE YOUR OWN BOOK</h1>
+  </header>
+  <main>
+    <div id="toolbar">
+      <button id="addText">Add Text</button>
+      
+
+      <button id="addImage">Add Image</button>
+
+      <button id="addPage">Add Page</button>
+      <button id="changeBgColor">Change Background Color</button>
+      <select id="fontSelector">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+      <button id="textAlignLeft">Align Left</button>
+      <button id="textAlignCenter">Align Center</button>
+      <button id="textAlignRight">Align Right</button>
+      <button id="voiceTyping"> Voice Typing</button>
+      <button id="bookmark">Bookmark</button>
+      <button id="download">Download as PDF</button>
+      <button id="preview">Preview</button>
+    </div>
+    <div id="canvas">
+      <div class="page active" contenteditable="true"></div>
+    </div>
+  </main>
+  <div id="previewModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="previewCanvas"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

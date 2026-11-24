@@ -1,0 +1,143 @@
+
+
+.resize-handle {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+body {
+  background-image: url('header.png');
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-image: url('');
+  background-color: #d4e670;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between; 
+  margin: 20px;
+  width: 90%;
+}
+
+#toolbar {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  width: 200px;
+}
+
+#toolbar button, #toolbar select {
+  padding: 10px;
+  background-color: #050d35;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#toolbar button:hover, #toolbar select:hover {
+  background-color: #821367;
+}
+
+#canvas {
+  border: 1px solid #ddd;
+  width: 100%;
+  min-height: 600px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  overflow-y: auto;
+  margin-left: 220px; 
+}
+
+.page {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  min-height: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page.active {
+  outline: 2px solid blue;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookmark {
+  font-weight: bold;
+  color: #ff6347;
+}
+
+
+#preview {
+  align-self: flex-start;
+  margin-bottom: 10px; 
+}
+#voiceTyping {
+  padding: 10px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#voiceTyping:hover {
+  background-color: #45a049;
+}
